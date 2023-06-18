@@ -12,6 +12,8 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "copy-to-clipboard": "^3.3.3",
+    "lzutf8": "^0.6.3",
     "material-ui-color-picker": "^3.5.1",
     "react": "^18.2.0",
     "react-contenteditable": "^3.3.7",
@@ -21,9 +23,9 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -43,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "craco": "^0.0.3"
   }
 }
