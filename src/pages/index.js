@@ -12,8 +12,8 @@ import { Button } from "../components/user/Button";
 import { Card, CardTop, CardBottom } from "../components/user/Card";
 
 import { Editor, Frame, Element } from "@craftjs/core";
+import { Layers } from "@craftjs/layers";
 import { Text } from "../components/user/Text";
-import lz from "lzutf8";
 
 export default function App() {
   const [initialState, setInitialState] = useState(null);
@@ -54,6 +54,9 @@ export default function App() {
               <Toolbox />
               <SettingsPanel />
             </Paper>
+          </Grid>
+          <Grid item xs={3}>
+            <Layers />
           </Grid>
         </Grid>
       </Editor>
